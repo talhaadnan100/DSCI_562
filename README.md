@@ -2,6 +2,8 @@
 
 Approaches when faced with special conditions in regression, and consequences of ignoring these conditions.
 
+Check out the [About](about.md) page for a description of the course.
+
 
 ## Course Learning Objectives
 
@@ -17,7 +19,7 @@ By the end of the course, students are expected to:
 
 | Deliverable | Weight   | Deadline | Submit to... |
 |------------|----------|----------|--------------|
-| lab assignment 1 | 15% | February 9, 2019 at 18:00 | github.ubc.ca |
+| [lab assignment 1](./lab1/lab1.md) | 15% | February 9, 2019 at 18:00 | github.ubc.ca |
 | lab assignment 2 | 15% | February 16, 2019 at 18:00 | github.ubc.ca |
 | quiz 1           | 20% | February 25, 2019 from 14:00-14:32 | canvas (write in your lab room) |
 | lab assignment 3 | 15% | **March 3, 2019 at 15:00** | github.ubc.ca |
@@ -32,7 +34,7 @@ Note: Topics covered are conditional on time available.
 |-------|-------------|-------------|
 | [1](./lec1) | 2019-02-04 | Model functions in regression |
 | [2](./lec2) | 2019-02-06 | Regression on restricted scales: GLM and transformations |
-| 3 | 2019-02-11 | Regression beyond the mean |
+| [3](./lec3) | 2019-02-11 | Regression beyond the mean |
 | 4 | 2019-02-13 | Regression in the presence of outliers: robust regression |
 | 5 | 2019-02-25 | Regression on censored response data: survival analysis   |
 | 6 | 2019-02-27 | Regression on ordinal response data: proportional odds model |
