@@ -37,9 +37,9 @@ Data source: [H. Jane Brockmann's 1996 paper](https://onlinelibrary.wiley.com/do
 Optimize the loess fit by eye. Just modify span, to keep things simple.
 
 ```{r, fig.width=6, fig.height=4}
-grid <- seq(min(crab$width), max(crab$width), length.out=100)
+grid <- seq(min(crab$width), max(crab$width), length.out=1000)
 grid_df <- tibble(width = grid)
-model1 <- loess(n_male ~ width, data=crab, TUNE_PARAMETERS_HERE)
+model1 <- loess(n_male ~ width, data=crab, degree = 2, span = 0.5)
 grid_df %>% 
   mutate(., yhat = predict(model1, .)) %>% 
   ggplot(aes(width, yhat)) +
@@ -51,10 +51,12 @@ What's the error of this model? Training error is fine.
 
 ```{r}
 resid1 <- crab$n_male - predict(model1)
-error1 <- FILL_THIS_IN
+(error1 <- mean(resid1^2))
 ```
 
 How well does this model answer our original question?
+
+**Comment:** It is a good predictive model, but not an excellent interpretive model.
 
 ## Approach 2: Linear Regression
 
@@ -89,11 +91,11 @@ Let's talk about an alternative approach called _Generalized Linear Models_ (GLM
 Fit a GLM. Plot using `ggplot2`, making use of the `method.args` argument of `geom_smooth()`. What's the error?
 
 ```{r}
-model3 <- glm(n_male ~ width, data=crab, FILL_THIS_IN)
+model3 <- glm(n_male ~ width, data=crab, family = poisson)
 ggplot(crab, aes(width, n_male)) +
     geom_point(alpha=0.25) +
-    geom_smooth(method="glm", se=FALSE, FILL_THIS_IN)
-resid3 <- crab$n_male - predict(glm, FILL_THIS_IN)
+    geom_smooth(method="glm", se=FALSE, method.args = )
+resid3 <- crab$n_male - predict(model3, type='response')
 (error3 <- mean(resid3^2))
 ```
 
