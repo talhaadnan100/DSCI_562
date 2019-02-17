@@ -4,6 +4,9 @@ Approaches when faced with special conditions in regression, and consequences of
 
 Check out the [About](about.md) page for a description of the course.
 
+__2018/2019 Instructor__: [Vincenzo Coia](https://vincenzocoia.github.io)
+
+__2018/2019 TA's__: Kateryna Tyshchenko, Sunny Tseng, Julian Ho
 
 ## Course Learning Objectives
 
@@ -69,3 +72,5 @@ General Resources:
 - For survival analysis: [David G. Kleinbaum, Mitchel Klein (2012) Survival analysis: a self-learning text, 3rd edition](http://webcat2.library.ubc.ca/vwebv/holdingsInfo?bibId=5827037)
 	- Non-technical explanation of survival analysis, with a nice succinct summary along the side of each page.
 	- Recommends epidemiological background, but we will avoid those parts.  
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
